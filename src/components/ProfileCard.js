@@ -1,19 +1,19 @@
 import React from "react";
 
-function ProfileCard() {
+function ProfileCard({ writer }) {
   return (
-    <div lassName="card">
+    <div className="card">
       <img
         src={`images/${writer.avatar}.png`}
         height="300px"
-        width="300"
+        width="300px"
         alt={writer.img}
       />
 
       <div className="textGroup">
         <h3>{writer.name}</h3>
         <p>{writer.email}</p>
-        <p>{witer.phone}</p>
+        <p>{writer.phone}</p>
 
         <button className="actionBtn">Read Bio</button>
       </div>
