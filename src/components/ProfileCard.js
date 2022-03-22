@@ -1,4 +1,7 @@
-import React, { useState } from "react";
+
+import React from "react";
+import  { useState } from "react";
+
 
 function ProfileCard({ writer }) {
   const [showBio, setShowBio] = useState(false);
@@ -27,7 +30,7 @@ function ProfileCard({ writer }) {
         <p>{writer.email}</p>
         <p>{writer.phone}</p>
 
-        <button className="actionBtn">Read Bio</button>
+        <button className="actionBtn" onClick={()=>handleClick(writer.bio)}>Read Bio</button>
       </div>
     </div>
   );
