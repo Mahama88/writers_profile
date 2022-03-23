@@ -12,7 +12,7 @@ function App() {
       loading: true,
     }));
     setTimeout(async () => {
-      let resp = await fetch("/writer.json");
+      let resp = await fetch("/writers.json");
       let result = await resp.json();
 
       setWriters((previousState) => ({
